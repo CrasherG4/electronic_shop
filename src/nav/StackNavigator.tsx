@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Login } from '../Screens/Login';
 import { Registro } from '../Screens/Registro';
 import { Inicio } from '../Screens/Inicio';
+import { Productos } from '../Screens/Productos';
 
 export interface User{
   id: number;
@@ -35,7 +36,8 @@ export const StackNavigator = () => {
     <Stack.Navigator>
       <Stack.Screen name='Login' options={{headerShown: false}} children={() => <Login users={listUsers}/>}/>
       <Stack.Screen name='Registro' options={{headerShown: false}} children={() => <Registro users={listUsers} handleAddUser={handleAddUser}/>}/>
-      <Stack.Screen name='Inicio' options={{headerShown: false}} component={Inicio}/>
+      <Stack.Screen name='Inicio' options={{ headerShown: false }} component={Inicio} />
+      <Stack.Screen name='Productos' options={{ headerShown: false }} component={Productos} />
     </Stack.Navigator>
   )
 }

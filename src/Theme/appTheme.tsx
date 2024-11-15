@@ -110,6 +110,8 @@ export const styles = StyleSheet.create({
     marginTop: 25,
   },
   checkForm: {
+    width: 70,
+    height: 70,
     position: 'absolute',
     top: '28%',
     right: -40,
@@ -161,6 +163,7 @@ export const styles = StyleSheet.create({
     padding: 15,
   },
   navBack: {
+    width: '15%',
     marginTop: '10%',
     marginLeft: '2%'
   },
@@ -168,10 +171,105 @@ export const styles = StyleSheet.create({
     color: 'white',
     padding: 10
   },
-  textoInicio_BORRAR:{
-    alignSelf: 'center',
-    marginTop: '80%',
+  ui_uno: {
+    width: '100%',
+    height: '35%',
+    backgroundColor: '#FF4747',
+    position: 'absolute',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 2,
+  },
+  ui_dos: {
+    height: 50,
+    marginTop: '15%',
+    paddingLeft: '5%',
+    paddingRight: '5%',
+  },
+  cabeceraInicio: {
+    paddingLeft: '5%',
+    paddingRight: '5%'
+  },
+  h1_txt: {
+    color: "#fff",
     fontSize: 24,
+    fontWeight: '800'
+  },
+  h2_txt: {
+    color: "#fff",
+    fontSize: 20,
     fontWeight: '600'
+  },
+  navRed: { 
+    flexDirection: 'row', 
+    justifyContent: 'center', 
+    marginTop: '10%', 
+    gap: 50 
+  },
+  iconNavRed: {
+    height: 80,
+    width: 80,
+    backgroundColor: '#FF4747',
+    borderWidth: 4,
+    borderColor: '#fff',
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  iconCenterNavred: {
+    color: 'white'
+  },
+  iconProfile: {
+    color: 'white',
+    position: 'absolute',
+    right: 40,
+    top: 4 
+  },
+  txtNavRed: {
+    flex:1,
+    position: 'absolute',
+    bottom: 0
+  },
+  // Carrito
+  areaCarrito: {
+    padding: 10,
+    backgroundColor: '#dadada',
+    width: '80%',
+    height: '100%',
+    alignSelf: 'center',
+    borderRadius: 8
+  },
+  // Navegación de abajo
+  navRedAll: {
+    position: 'absolute',
+    width: '50%',
+    height: '6%',
+    backgroundColor: '#FF4747',
+    borderRadius: 16,
+    bottom: '2%',
+    alignSelf: 'center',
+    flexDirection: 'row', 
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: 30
+  },
+  touchIconNavAll: {
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  touchIconNavAllSelect: {
+    backgroundColor: '#fff',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8
+  },
+  iconNavAllSelect: {
+    color: '#FF4747'
+  },
+  iconNavAll: {
+    color: '#fff'
   }
 })

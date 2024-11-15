@@ -60,7 +60,9 @@ export const Login = ({ users }: Props) => {
     console.log(foundUser);
    
     //Permitir la navegación al usuario si ha ingresado los datos correctamente
-    navigation.dispatch(CommonActions.navigate({ name: 'Inicio' }))
+    navigation.dispatch(CommonActions.navigate({ 
+      name: 'Inicio'
+    }));
   }
 
   // Verifica el correo y contraseña

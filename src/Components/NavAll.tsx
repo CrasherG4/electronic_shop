@@ -10,14 +10,14 @@ export const NavAll = () => {
 
   return (
     <View style={styles.navRedAll}>
-      <TouchableOpacity style={styles.touchIconNavAllSelect} onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Inicio' }))}>
-        <Icon name='home' size={40} color={'#FF4747'} style={styles.iconNavAllSelect} />
+      <TouchableOpacity style={styles.touchIconNavAll} onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Inicio' }))}>
+        <Icon name='home' size={40} color={'#fff'} style={styles.iconNavAll} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.touchIconNavAll} onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Productos' }))}>
-        <Icon name='shopping-bag' size={40} color={'#fff'} style={styles.iconNavAll} />
+        <Icon name='shopping-bag' size={39} color={'#fff'} style={styles.iconNavAll} />
       </TouchableOpacity>
       <TouchableOpacity style={styles.touchIconNavAll} onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Inicio' }))}>
-        <Icon name='credit-card' size={40} color={'#fff'} style={styles.iconNavAll} />
+        <Icon name='help' size={38} color={'#fff'} style={styles.iconNavAll} />
       </TouchableOpacity>
     </View>
   )

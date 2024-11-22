@@ -6,6 +6,15 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white'
   },
+  contAll4All: {
+    flex: 1
+  },
+  contCardPr: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: 4,
+  },
   circuloUno: {
     width: 350,
     height: 350,
@@ -162,6 +171,34 @@ export const styles = StyleSheet.create({
     fontWeight: '600',
     padding: 15,
   },
+  // Inicio
+  imgInicioView:{
+    marginBottom: 15,
+    backgroundColor: '#000000',
+    borderRadius: 6,
+    justifyContent: 'center'
+  },
+  imgInicio: {
+    width: '100%',
+    height: 120,
+    borderRadius: 6, 
+    opacity: 0.5
+  },
+  textInicio: {
+    fontSize: 24,
+    color: '#000000',
+    marginBottom: 20,
+  },
+  textImgInicio: {
+    position: 'absolute',
+    fontSize: 34,
+    fontWeight: '700',
+    alignSelf: 'center',
+    color: 'white',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 0.2
+  },
+  // Nav Inferior
   navBack: {
     width: '15%',
     marginTop: '10%',
@@ -173,7 +210,7 @@ export const styles = StyleSheet.create({
   },
   ui_uno: {
     width: '100%',
-    height: '35%',
+    height: '32%',
     backgroundColor: '#FF4747',
     position: 'absolute',
     shadowColor: '#000',
@@ -183,8 +220,8 @@ export const styles = StyleSheet.create({
     elevation: 2,
   },
   ui_dos: {
-    height: 50,
-    marginTop: '15%',
+    height: '100%',
+    marginTop: '12%',
     paddingLeft: '5%',
     paddingRight: '5%',
   },
@@ -200,12 +237,12 @@ export const styles = StyleSheet.create({
   h2_txt: {
     color: "#fff",
     fontSize: 20,
-    fontWeight: '600'
+    fontWeight: '600',
   },
   navRed: { 
     flexDirection: 'row', 
     justifyContent: 'center', 
-    marginTop: '10%', 
+    marginTop: '6%', 
     gap: 50 
   },
   iconNavRed: {
@@ -233,14 +270,7 @@ export const styles = StyleSheet.create({
     bottom: 0
   },
   // Carrito
-  areaCarrito: {
-    padding: 10,
-    backgroundColor: '#dadada',
-    width: '80%',
-    height: '100%',
-    alignSelf: 'center',
-    borderRadius: 8
-  },
+  
   // Navegación de abajo
   navRedAll: {
     position: 'absolute',
@@ -248,12 +278,17 @@ export const styles = StyleSheet.create({
     height: '6%',
     backgroundColor: '#FF4747',
     borderRadius: 16,
-    bottom: '2%',
+    bottom: '1%',
     alignSelf: 'center',
     flexDirection: 'row', 
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 30
+    gap: 30,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 1,
+    shadowRadius: 4,
+    elevation: 2,
   },
   touchIconNavAll: {
     height: '100%',
@@ -271,5 +306,197 @@ export const styles = StyleSheet.create({
   },
   iconNavAll: {
     color: '#fff'
+  },
+  // Muestra de productos
+  h1_txtPr: {
+    color: "#fff",
+    fontSize: 24,
+    fontWeight: '800',
+    textShadowOffset: { width: 2, height: 2 },
+    textShadowRadius: 0.2
+  },
+  contAlPr: {
+    padding: 4,
+    margin: 4,
+    width: '90%',
+    height: 500,
+    borderRadius: 10,
+    flexDirection: 'column',
+    gap: 6,
+    alignItems: 'center',
+    borderWidth: 4,
+    borderColor: '#ff6b6b'
+  },
+  areaPr: {
+    backgroundColor: '#ffeaea',
+    padding: 10,
+    width: '84%',
+    height: '82%',
+    alignSelf: 'center',
+    borderRadius: 10,
+  },
+  imgAlPr: {
+    marginTop: 4,
+    width: '95%',
+    height: '60%',
+    borderRadius: 6,
+    backgroundColor: '#ff6b6b'
+  },
+  contextAlPr: {
+    width: '92%',
+    height: '100%',
+    flexDirection: 'column'
+  },
+  textAlPrT: {
+    color: 'black',
+    fontSize: 20,
+    fontWeight: '800'
+  },
+  textAlPrD: {
+    color: 'black',
+    fontSize: 16,
+    fontWeight: '400',
+    textAlign: 'justify'
+  },
+  conticonAlPr: {
+    position: 'absolute',
+    backgroundColor: '#ff6b6b',
+    width: '100%',
+    height: 40,
+    bottom: 10,
+    flexDirection: 'row',
+    gap: 60,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  textAdd: {
+    alignSelf: 'center',
+    fontSize: 22,
+    fontWeight: '600',
+    color: 'white'
+  },
+  iconAdd: {
+    color: 'white',
+  },
+  securityView: {
+    height: 60,
+    width: '100%',
+    backgroundColor: '#ead9d9',
+    marginBottom: 3
+  },
+  // Modal Car
+  modalCar: {
+    flex: 1, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.3)',
+  },
+  modalCarInfo: {
+    backgroundColor: 'white',
+    width: '90%',
+    height: '60%',
+    borderRadius: 8,
+    padding: 20,
+    gap: 20
+  },
+  textAndExit: {
+    flexDirection: 'row',
+  },
+  h1Modal: {
+    color: '#444444',
+    fontSize: 24,
+    fontWeight: '600'
+  },
+  lengthIconCar: {
+    zIndex: 1,
+    width: 26,
+    height:26,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    borderWidth: 2,
+    borderColor: '#ff6b6b',
+    alignItems: 'center',
+  },
+  textLengthIconCar:{
+    fontSize: 16,
+    fontWeight: '900',
+  },
+  carPos: {
+    position: 'absolute',
+    right: 20,
+    top: 50
+  },
+  iconCarExit: {
+    position: 'absolute',
+    right: 0,
+  },
+  textModalUno: {
+    color: '#444444',
+    fontSize: 16,
+    fontWeight: '500',
+    alignSelf: 'center'
+  },
+  headerTable: {
+    height: 60,
+    flexDirection: 'row',
+    gap: 20,
+    marginTop: 5,
+    borderRadius: 6
+  },
+  headerTableName: {
+    height: 20,
+    flexDirection: 'row',
+    gap: 20,
+    marginLeft: 10,
+    marginRight: 10
+  },
+  listModal: {
+    flexDirection: 'row',
+  },
+  textListModal: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#444444',
+    alignSelf: 'center',
+  },
+  areaFlatListCar: {
+    alignItems: 'center',
+    width: '100%',
+    height: '70%'
+  },
+  trashBuyButtoms: {
+    flexDirection: 'row',
+    width: '100%',
+    height: 40,
+    gap: 4
+  },
+  trashButtom: {
+    width: '15%',
+    height: '100%',
+    backgroundColor: '#ff6b6b',
+    borderRadius: 6,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  buyButtom: {
+    width: '85%',
+    height: '100%',
+    backgroundColor: '#ff6b6b',
+    borderRadius: 6,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  textBuyModal: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: 'white'
+  },
+  helpAndSuport: {
+    flex:1,
+    padding: 20,
+    marginTop: '5%'
   }
 })

@@ -4,6 +4,7 @@ import { Login } from '../Screens/Login';
 import { Registro } from '../Screens/Registro';
 import { Inicio } from '../Screens/Inicio';
 import { Productos } from '../Screens/Productos';
+import { AyudaYSoporte } from '../Screens/AyudaYSoporte';
 
 export interface User{
   id: number;
@@ -32,12 +33,15 @@ export const StackNavigator = () => {
     setListUsers([ ...listUsers, user ])
   }
 
+  const [saveCard, setSaveCard] = useState<boolean>(false)
+
   return (
     <Stack.Navigator>
       <Stack.Screen name='Login' options={{headerShown: false}} children={() => <Login users={listUsers}/>}/>
       <Stack.Screen name='Registro' options={{headerShown: false}} children={() => <Registro users={listUsers} handleAddUser={handleAddUser}/>}/>
-      <Stack.Screen name='Inicio' options={{ headerShown: false }} component={Inicio} />
-      <Stack.Screen name='Productos' options={{ headerShown: false }} component={Productos} />
+      <Stack.Screen name='Inicio' options={{ headerShown: false }} children={() => <Inicio setSaveCard={() => setSaveCard(!saveCard)} saveCard={saveCard}/>}/>
+      <Stack.Screen name='Productos' options={{ headerShown: false }} children={() => <Productos setSaveCard={() => setSaveCard(!saveCard)} saveCard={saveCard}/>} />
+      <Stack.Screen name='AyudaYSoporte' options={{headerShown: false}} component={AyudaYSoporte}/>
     </Stack.Navigator>
   )
 }

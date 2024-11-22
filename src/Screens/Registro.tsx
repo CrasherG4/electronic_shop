@@ -102,33 +102,33 @@ export const Registro = ({ users, handleAddUser }: Props) => {
   }
 
   return (
-      <View style={styles.contAll}>
-      <View style={{...styles.circuloUno, backgroundColor: '#2E3192'}}/>
-      <View style={{...styles.circuloDos, backgroundColor: '#2E3192'}}/>
-      <View style={{...styles.circuloTres, backgroundColor: '#2E3192'}}/>
-      <View style={{...styles.circuloCuatro, backgroundColor: '#2E3192'}}/>
+    <View style={styles.contAll}>
+      <View style={{ ...styles.circuloUno, backgroundColor: '#2E3192' }} />
+      <View style={{ ...styles.circuloDos, backgroundColor: '#2E3192' }} />
+      <View style={{ ...styles.circuloTres, backgroundColor: '#2E3192' }} />
+      <View style={{ ...styles.circuloCuatro, backgroundColor: '#2E3192' }} />
       <TouchableOpacity style={styles.navBack} onPress={() => navigation.dispatch(CommonActions.navigate({ name: 'Login' }))}>
-        <Icon style={styles.iconBack} name={'close'} size={40} color={'#000'}/>
+        <Icon style={styles.iconBack} name={'close'} size={40} color={'#000'} />
       </TouchableOpacity>
-      <View style={{...styles.logoLR, paddingTop: '10%'}}>
+      <View style={{ ...styles.logoLR, paddingTop: '10%' }}>
         <View>
-          <Image style={styles.imgLogoLR} source={require('../img/Logos/LogoTomateYBlanco.png')}/>
+          <Image style={styles.imgLogoLR} source={require('../img/Logos/LogoTomateYBlanco.png')} />
         </View>
-        <Text  style={styles.textLogoES}>Electronic Shop</Text>
+        <Text style={styles.textLogoES}>Electronic Shop</Text>
       </View>
       <View style={styles.inputComponent}>
-      <InputComponents placeholder='Nombre' handleSetValues={handleSetValues} name='nombre' />
+        <InputComponents placeholder='Nombre' handleSetValues={handleSetValues} name='nombre' />
         <InputComponents placeholder='Apellido' handleSetValues={handleSetValues} name='apellido' />
         <InputComponents placeholder='Usuario' handleSetValues={handleSetValues} name='usuario' />
         <InputComponents placeholder='Correo' handleSetValues={handleSetValues} name='email' />
         <InputComponents placeholder='Contraseña' handleSetValues={handleSetValues} name='password' secureTextEntry={hiddenPassword} actionIcon={() => changeIcon()} isPss={true} icon={icon} />
-        <View style={{...styles.checkForm, top: '40%'}}>
-          <TouchableOpacity style={{...styles.btnLogIn, backgroundColor: '#004A80'}} onPress={() => handleSignInUp()}>
-            <Icon style={styles.iconAccess} name={'check'} size={40} color={'#000'}/>
+        <View style={{ ...styles.checkForm, top: '40%' }}>
+          <TouchableOpacity style={{ ...styles.btnLogIn, backgroundColor: '#004A80' }} onPress={() => handleSignInUp()}>
+            <Icon style={styles.iconAccess} name={'check'} size={40} color={'#000'} />
           </TouchableOpacity>
         </View>
       </View>
-      
+
     </View>
   )
 }
